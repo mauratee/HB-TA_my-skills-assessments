@@ -1,0 +1,37 @@
+1) B
+let: inital value is optional - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+const: needs to be initialized or will throw Uncaught SyntaxError: Missing initializer in const declaration
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+2) C
+A & B: can't use const in for loop, need let
+D: strict equality "===" versus equality "=="
+JS Language 1 Lecture
+3) D
+Arrays are mutable even if declared with const
+# Below will cause Uncaught TypeError:
+const fruits = ['apple', 'berry', 'cherry'];
+fruits = ['apricot', 'banana', 'cantelope']
+# Below will not cause Uncaught TypeError:
+const fruits = ['apple', 'berry', 'cherry'];
+fruits.push('durian');
+fruits[0] = 'apricot';
+## From MDN Docs: However, if a constant is an object or array its properties or items can be updated or removed. 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+4) A
+document.querySelectorAll('p').style.color = 'green'; # can't select style of list 
+document.querySelectorAll('p');
+document.querySelectorAll('p').forEach(el => {el.style.color = 'green'}) ; # use .forEach to loop over list
+5) B
+Javascript Event Handling Lecture:
+Event Object section
+https://fellowship.hackbrightacademy.com/materials/wmt1/lectures/js-event-handling/#the-event-object
+6) D
+Framework: Flask, React
+Library: Random in Python, jQuery in JS
+Programming language
+Front-end design technique for sending requests and receiving responses from a server 
+without having to reload the browser page. Code we will write
+7) C
+A: route in server is expecting query string. Doesn't match syntax
+B: Query string key doesn't match key in request.args
+D: Promise object is being logged to console

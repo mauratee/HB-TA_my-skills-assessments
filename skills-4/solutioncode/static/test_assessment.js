@@ -1,0 +1,1 @@
+../../startercode/static/test_assessment.js

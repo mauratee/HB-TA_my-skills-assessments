@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <h1> Welcome, {{ session['name'] }}</h1>
+
+  <p>Current session is: {{ session }}</p>
+
+  <h4> We can access melons in Jinja! melons is: </h4>
+  <p>{{ melons }}</p>
+
+  {% for melon in melons.values() %}
+    <div class="melon-div">
+      <!-- <p>{{ melon }}</p> -->
+      <h3>{{ session['name'] }}, this is a {{ melon['name'] }}</h3>
+      <h2>Loved {{ melon['num_loves'] }} times.</h2>
+      <img
+        src="{{ melon['img'] }}"
+      />
+    </div>
+  {% endfor %}
+  
+  <h2>Love a melon</h2>
+
+  <p>melons.items() returns a list of key-value pairs from the dictionary:</p>
+  <p>{{ melons.items() }}</p>
+
+  {% for melon_id, melon in melons.items() %}
+  <p>{{ melon_id }}</p>
+  <p>{{ melon }}</p>
+  {% endfor %}
+
+  <form action="/love-melon" method="POST">
+    <label for="melon-select">Choose a melon to love</label>
+    <select id="melon-select" name="melon">
+      {% for melon_id, melon in melons.items() %}
+        <option value="{{ melon_id }}">{{ melon['name'] }}</option>
+        <!-- MDN Docs Option Element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option -->
+      {% endfor %}
+    </select>
+    
+    <input type="submit" />
+  </form>
+{% endblock %}

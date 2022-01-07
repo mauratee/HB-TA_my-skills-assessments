@@ -1,0 +1,25 @@
+1) C
+# A: out of order, B: no closing for strong, D: no closing slash for strong
+2) A
+# HTML lecture: span is generic inline, h1 is block, rest are inline
+3) C
+4) C
+5) B
+# CSS lecture: combine element selector with two class selectors in B, no space between
+6) B
+# How the Web Works Lecture (HTWW)
+7) B
+# HTWW
+8) A
+9) D
+# Flask & Jinja: Jinja syntax
+** 10) C
+# Flask & Jinja: layout.html is base, entire `block phrase` in layout will be replaced
+# by 'block phrase` in page.html
+** 11) B
+# query string sent as immutable multi dict, index into dict at the key, "value",
+# to grab value "purple" from dict. purple will be a string!
+12) B
+# Flask Intro lecture
+# show_find_results executes becuase method in HTML matches method in server. 
+# `method = "GET"` is HTML syntax, `methods=['GET']` is equivalent server syntax
