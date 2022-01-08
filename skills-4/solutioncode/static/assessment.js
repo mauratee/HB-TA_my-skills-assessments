@@ -51,9 +51,17 @@ document.querySelector('form').addEventListener('submit', (evt) => {
 //     <li>Item</li>  <!-- This list item was already here -->
 //     <li>Item</li>  <!-- This was added after double-clicking -->
 //   </ul>
+
+
 document.querySelector('#list-adder').addEventListener('click', (evt) => {
   document.querySelector('#list').insertAdjacentHTML('beforeend', '<li>Item</li>');
 });
+
+
+// .querySelector versus .getElementByID -> querySelector is newer, more flexible and
+// uses CSS selectors. getElementbyID only used for IDs. Ultimately personal preference
+// and situational choice.
+
 
 //
 // PROMPT 4
@@ -112,6 +120,7 @@ document.querySelector('#blue-changer').addEventListener('click', () => {
 fetch("https://pokeapi.co/api/v2/berry/")
   .then(response => response.json())
   .then(apiResponse => {
+    console.log(apiResponse.results);
     for (const berry of apiResponse.results) {
       document
         .querySelector("#berries")
@@ -141,7 +150,7 @@ document.querySelector('#prompt-6 form').addEventListener('submit', (evt) => {
   const num = Number(document.querySelector("#num").value);
 
   let result = num;
-  for (let n = num - 1; n >= 1; n -= 1) {
+  for (let n = num - 1; n >= 1; n-- ) {
     result = result * n;
   }
 

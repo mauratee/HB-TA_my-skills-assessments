@@ -22,6 +22,8 @@ document.querySelectorAll('p').style.color = 'green'; # can't select style of li
 document.querySelectorAll('p');
 document.querySelectorAll('p').forEach(el => {el.style.color = 'green'}) ; # use .forEach to loop over list
 5) B
+Event Listener
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 Javascript Event Handling Lecture:
 Event Object section
 https://fellowship.hackbrightacademy.com/materials/wmt1/lectures/js-event-handling/#the-event-object
