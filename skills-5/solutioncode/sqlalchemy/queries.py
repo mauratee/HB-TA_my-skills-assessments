@@ -44,7 +44,10 @@ def print_humans_and_animals():
     ):
         print(f"{human.fname} {human.lname}")
 
-        for animal in sorted(human.animals, key=lambda a: a.name):
+        # lambda fxn is an anonymous function (similar to arrow fxn in JS)
+        # that takes in parameter and function body to call on the parameter
+        for animal in sorted(human.animals, key=lambda animal: animal.name):
+
             print(f"- {animal.name}, {animal.animal_species}")
 
 
