@@ -1,0 +1,38 @@
+Part 1: Discussion Questions
+============================
+
+Runtime
+-------
+1)
+
+A) Runtime for does_string_contain_letter:
+O(n)
+
+B) Runtime for contain_letters_in_common:
+O(n^2)
+
+C) Runtime for letters_in_common:
+O(n)
+
+Stacks and Queues
+-----------------
+
+2) Stack: Built-in Python list
+For a stack, we want to push and pop from the end. These are built-in methods for python lists ( .append() and .pop() ) and both run in are O(1)/constant time operations. We could also use a linked list, as long as we add and remove from the beginning (both O(1) operations).
+
+3) Queue: Linked-List
+A queue enqueues at the end but dequeues from the front. Removing from the front is O(1), and if our linked list tracks the tail, appending to the end (enqueuing) is O(1). By comparison, a built-in Python list would be O(n) for removing from the front as all of the indices will be reassigned.
+
+
+Trees
+-----
+4) food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, burritos
+
+5) Food, Mexican, enchiladas, tacos, burritos, Indian, saag, tikka masala, Italian, pizza, Sicilian, New York-style, Chicago-style
+
+6) In a binary search tree, each node has at most two children, and nodes are organized according to an ordering rule, such that all of a node's left descendants are 'less than' the node and all of a node's right descendants are 'greater than' the node. Neither of these restrictions apply to a generic tree.
+
+Part 2: Code
+============
+
+See individual files for solutions.
