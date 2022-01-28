@@ -27,8 +27,10 @@ A queue enqueues at the end but dequeues from the front. Removing from the front
 Trees
 -----
 4) food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, burritos
+# Breadth First Search: uses queue, append to end, pop from beginning
 
 5) Food, Mexican, enchiladas, tacos, burritos, Indian, saag, tikka masala, Italian, pizza, Sicilian, New York-style, Chicago-style
+# Depth First Search: uses stack, append to end, pop from end
 
 6) In a binary search tree, each node has at most two children, and nodes are organized according to an ordering rule, such that all of a node's left descendants are 'less than' the node and all of a node's right descendants are 'greater than' the node. Neither of these restrictions apply to a generic tree.
 
