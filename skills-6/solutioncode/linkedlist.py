@@ -35,7 +35,7 @@ class LinkedList(object):
 
         self.tail = new_node
 
-
+# Using dictionary gives us O(1) instead of O(n) for list
 VOWELS = {'a', 'e', 'i', 'o', 'u'}
 
 def only_vowels(llist):
